@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --red: #c71d57;
+  --light-green: #3fa292;
+  --soft-pink: #f3ac93;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator_container {
+  background-color: var(--red);
+  border-radius: 20px;
+  padding: 1.5em;
+  position: absolute;
+  top: 20%;
+}
+
+h1 {
+  margin: 0 1em 1em;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Yesteryear", cursive;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color: var(--light-green);
+  position: absolute;
+  top: 8%;
+}
+
+.icecream {
+  color: var(--soft-pink);
+}
+
+.form_control {
+  margin: 0.75rem 0;
+}
+
+.form_control input {
+  padding: 0.25rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+.form_control label {
+  display: block;
+}
+
+button {
+  padding: 0.3rem 0.6rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover,
+button:focus {
+  background: var(--black);
+  color: var(--light-green);
+}
+
+.calculator_container footer {
+  margin-top: 1rem;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
